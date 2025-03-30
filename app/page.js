@@ -1,10 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import PosthogTracking from '@/app/components/PosthogTracking';
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        <PosthogTracking />
         <Image
           className={styles.logo}
           src="/next.svg"
